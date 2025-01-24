@@ -2,20 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', 'Montserrat Fallback', Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    --color-black: #000000; /* Light theme black color */
+    --color-white: #ffffff; /* Light theme white color */
+    --color-gray-500: #6e6e6e; /* Light theme gray color */
+    --color-blue-400: #ebf5fa; /* Light theme blue color */
+    --color-blue-500: #293e6c; /* Light theme blue color */
+    --color-yellow-500: #f7ba28; /* Light theme yellow color */
+    --color-primary: var(--color-blue-500); /* Light theme primary text color */
+    --color-primary-light: var(--color-blue-400); /* Light theme primary color */
+    --color-secondary: var(--color-yellow-500); /* Light theme secondary color */
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-black: #000000; /* Dark theme black color */
+      --color-white: #ffffff; /* Dark theme white color */
+      --color-gray-500: #6e6e6e; /* Dark theme gray color */
+      --color-blue-400: #ebf5fa; /* Dark theme blue color */
+      --color-blue-500: #293e6c; /* Dark theme blue color */
+      --color-yellow-500: #f7ba28; /* Dark theme yellow color */
+      --color-primary: var(--color-blue-500); /* Dark theme primary text color */
+      --color-primary-light: var(--color-blue-400); /* Dark theme primary color */
+      --color-secondary: var(--color-yellow-500); /* Dark theme secondary color */
+    }
+  }
 }
