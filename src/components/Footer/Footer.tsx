@@ -9,8 +9,8 @@ import { YouTubeIcon } from '../icons/youtube';
 export const Footer: FC = () => {
   return (
     <footer className="w-full bg-white">
-      <div className="container mx-auto py-16">
-        <nav className="flex flex-wrap justify-center items-center gap-6 w-full text-black font-semibold text-sm">
+      <div className="container mx-auto py-16 text-black font-semibold text-sm">
+        <nav className="flex flex-wrap justify-center items-center gap-6 w-full">
           {NAV_LINKS.map((link) => (
             <Link key={link.href} href={link.href}>
               {link.label}
@@ -19,16 +19,16 @@ export const Footer: FC = () => {
         </nav>
         <div className="flex justify-center items-center gap-4 w-full mt-8">
           <Link href="https://twitter.com">
-            <TwitterIcon color="black" />
+            <TwitterIcon />
           </Link>
           <Link href="https://facebook.com">
-            <FacebookIcon color="black" />
+            <FacebookIcon />
           </Link>
           <Link href="https://instagram.com">
-            <InstagramIcon color="black" />
+            <InstagramIcon />
           </Link>
           <Link href="https://youtube.com">
-            <YouTubeIcon color="black" />
+            <YouTubeIcon />
           </Link>
         </div>
         <p className="text-center text-gray-500 mt-8 text-xs font-medium">
