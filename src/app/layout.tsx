@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Montserrat } from 'next/font/google';
+import { Montserrat, Ovo, Roboto } from 'next/font/google';
 import Providers from '@/providers';
 
 import './globals.css';
@@ -8,6 +8,20 @@ const montserrat = Montserrat({
   variable: '--font-montserrat',
   subsets: ['latin'],
   display: 'swap',
+});
+
+const roboto = Roboto({
+  variable: '--font-roboto',
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '400',
+});
+
+const ovo = Ovo({
+  variable: '--font-ovo',
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '400',
 });
 
 export const metadata: Metadata = {
@@ -23,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} antialiased`}>
+      <body className={`${montserrat.variable} ${roboto.variable} ${ovo.variable} antialiased`}>
         <Providers>{children}</Providers>
       </body>
     </html>

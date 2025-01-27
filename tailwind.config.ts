@@ -8,10 +8,21 @@ export default {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '3rem',
+        xl: '4rem',
+      },
+    },
     extend: {
       fontFamily: {
         main: ['var(--font-montserrat)'],
         montserrat: ['var(--font-montserrat)'],
+        roboto: ['var(--font-roboto)'],
+        ovo: ['var(--font-ovo)'],
       },
       colors: {
         'gray-500': 'var(--color-gray-500)',
