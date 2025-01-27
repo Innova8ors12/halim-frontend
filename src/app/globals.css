@@ -18,6 +18,10 @@ body {
     --color-primary: var(--color-blue-500); /* Light theme primary text color */
     --color-primary-light: var(--color-blue-400); /* Light theme primary color */
     --color-secondary: var(--color-yellow-500); /* Light theme secondary color */
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 
   @media (prefers-color-scheme: dark) {
