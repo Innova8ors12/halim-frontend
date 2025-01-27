@@ -4,6 +4,8 @@ import Providers from '@/providers';
 
 import './globals.css';
 
+import { Header } from '@/components/Header/Header';
+
 const montserrat = Montserrat({
   variable: '--font-montserrat',
   subsets: ['latin'],
@@ -38,7 +40,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.variable} ${roboto.variable} ${ovo.variable} antialiased`}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <Header />
+          {children}
+        </Providers>
       </body>
     </html>
   );
