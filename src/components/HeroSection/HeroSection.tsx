@@ -23,7 +23,7 @@ export const HeroSection: FC = () => {
   const style = { backgroundImage };
 
   return (
-    <div
+    <section
       className="w-full h-screen bg-center bg-no-repeat bg-cover flex items-center justify-stretch"
       style={style}
     >
@@ -39,6 +39,6 @@ export const HeroSection: FC = () => {
           Get Started <ChevronRightIcon size={24} strokeWidth={4} />
         </Button>
       </div>
-    </div>
+    </section>
   );
 };
