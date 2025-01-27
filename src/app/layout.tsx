@@ -4,6 +4,7 @@ import Providers from '@/providers';
 
 import './globals.css';
 
+import { Footer } from '@/components/Footer/Footer';
 import { Header } from '@/components/Header/Header';
 
 const montserrat = Montserrat({
@@ -43,6 +44,7 @@ export default function RootLayout({
         <Providers>
           <Header />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>
