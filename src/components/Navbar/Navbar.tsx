@@ -4,6 +4,7 @@ import React, { FC } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { MenuIcon } from 'lucide-react';
+import { NAV_LINKS } from '@/constants/navbar';
 import { Button } from '../ui/button';
 import {
   Drawer,
@@ -14,21 +15,12 @@ import {
   DrawerTrigger,
 } from '../ui/drawer';
 
-const links = [
-  { href: '/', label: 'Home' },
-  { href: '/industries', label: 'Industries' },
-  { href: '/services', label: 'Services' },
-  { href: '/our-projects', label: 'Our Projects' },
-  { href: '/about-us', label: 'About Us' },
-  { href: '/contact-us', label: 'Contact Us' },
-];
-
 export const Navbar: FC = () => {
   const pathname = usePathname();
   return (
     <>
       <nav className="hidden md:flex justify-center items-center gap-4 w-full text-gray-500 font-medium text-sm">
-        {links.map((link) => (
+        {NAV_LINKS.map((link) => (
           <Link
             key={link.href}
             href={link.href}
@@ -57,7 +49,7 @@ export const Navbar: FC = () => {
               </DrawerTitle>
             </DrawerHeader>
             <nav className="flex md:hidden flex-col gap-4 w-full text-gray-500 font-medium text-sm">
-              {links.map((link) => (
+              {NAV_LINKS.map((link) => (
                 <DrawerClose asChild key={link.href}>
                   <Link
                     href={link.href}
