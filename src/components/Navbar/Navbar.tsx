@@ -19,7 +19,7 @@ export const Navbar: FC = () => {
   const pathname = usePathname();
   return (
     <>
-      <nav className="hidden md:flex justify-center items-center gap-4 w-full text-gray-500 font-medium text-sm">
+      <nav className="hidden md:flex justify-center items-center gap-4 w-full font-montserrat text-gray-500 font-medium text-sm">
         {NAV_LINKS.map((link) => (
           <Link
             key={link.href}
@@ -48,7 +48,7 @@ export const Navbar: FC = () => {
                 </p>
               </DrawerTitle>
             </DrawerHeader>
-            <nav className="flex md:hidden flex-col gap-4 w-full text-gray-500 font-medium text-sm">
+            <nav className="flex md:hidden flex-col gap-4 w-full font-montserrat text-gray-500 font-medium text-sm">
               {NAV_LINKS.map((link) => (
                 <DrawerClose asChild key={link.href}>
                   <Link

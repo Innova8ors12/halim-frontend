@@ -19,10 +19,12 @@ export default {
     },
     extend: {
       fontFamily: {
-        main: ['var(--font-montserrat)'],
+        main: ['var(--font-copperplate-gothic-light)'],
         montserrat: ['var(--font-montserrat)'],
         roboto: ['var(--font-roboto)'],
         ovo: ['var(--font-ovo)'],
+        'copperplate-gothic-bold': ['var(--font-copperplate-gothic-bold)'],
+        'copperplate-gothic-light': ['var(--font-copperplate-gothic-light)'],
       },
       colors: {
         'gray-500': 'var(--color-gray-500)',

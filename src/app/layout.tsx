@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Montserrat, Ovo, Roboto } from 'next/font/google';
+import localFont from 'next/font/local';
 import Providers from '@/providers';
 
 import './globals.css';
@@ -27,6 +28,18 @@ const ovo = Ovo({
   weight: '400',
 });
 
+const copperPlateGothicBold = localFont({
+  src: '../../public/assets/fonts/Copperplate Gothic Bold Regular/Copperplate Gothic Bold Regular.ttf',
+  variable: '--font-copperplate-gothic-bold',
+  display: 'swap',
+});
+
+const copperPlateGothicLight = localFont({
+  src: '../../public/assets/fonts/Copperplate Gothic Light Regular/Copperplate Gothic Light Regular.ttf',
+  variable: '--font-copperplate-gothic-light',
+  display: 'swap',
+});
+
 export const metadata: Metadata = {
   title: 'Halim & Co.',
   description:
@@ -40,7 +53,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} ${roboto.variable} ${ovo.variable} antialiased`}>
+      <body
+        className={`${montserrat.variable} ${roboto.variable} ${ovo.variable} ${copperPlateGothicBold.variable} ${copperPlateGothicLight.variable} antialiased`}
+      >
         <Providers>
           <Header />
           {children}

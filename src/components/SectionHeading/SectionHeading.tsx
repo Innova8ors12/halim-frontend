@@ -22,7 +22,7 @@ export const SectionHeading: FC<SectionHeadingProps> = ({
     <>
       <h1
         {...headingProps}
-        className={`font-roboto text-gray-500 font-medium ${headingProps?.className || ''}`}
+        className={`font-poppins text-gray-500 font-medium ${headingProps?.className || ''}`}
       >
         {highlightedText && (
           <span
@@ -36,7 +36,7 @@ export const SectionHeading: FC<SectionHeadingProps> = ({
       </h1>
       <h2
         {...subHeadingProps}
-        className={`text-4xl md:text-5xl font-bold text-black max-w-2xl mt-6 ${subHeadingProps?.className || ''}`}
+        className={`text-4xl md:text-5xl font-copperplate-gothic-bold font-bold text-black max-w-2xl mt-4 ${subHeadingProps?.className || ''}`}
       >
         {subHeading}
       </h2>

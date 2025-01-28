@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Montserrat', 'Montserrat Fallback', Arial, Helvetica, sans-serif;
+  font-family: 'copperPlateGothicLight', 'copperPlateGothicLight Fallback', 'copperPlateGothicBold',
+    'copperPlateGothicBold Fallback', 'Roboto', 'Roboto Fallback', 'Montserrat',
+    'Montserrat Fallback', Arial, Helvetica, sans-serif;
 }
 
 @layer base {

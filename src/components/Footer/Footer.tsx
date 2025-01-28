@@ -9,7 +9,7 @@ import { YouTubeIcon } from '../icons/youtube';
 export const Footer: FC = () => {
   return (
     <footer className="w-full bg-white">
-      <div className="container mx-auto py-16 text-black font-semibold text-sm">
+      <div className="container mx-auto py-16 font-copperplate-gothic-light text-black font-medium text-sm">
         <nav className="flex flex-wrap justify-center items-center gap-6 w-full">
           {NAV_LINKS.map((link) => (
             <Link key={link.href} href={link.href}>
