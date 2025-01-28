@@ -27,14 +27,14 @@ export const AboutUsSection: FC = () => {
         <div className="w-full md:w-1/2 pr-10 sm:pr-12 md:pr-10 lg:pr-16 pt-10 sm:pt-12 md:pt-10 lg:pt-16 rounded-lg overflow-hidden bg-right-top bg-no-repeat relative">
           <div
             className="absolute bg-primary w-1/3 h-4/5 top-0 right-0"
-            style={{ borderTopRightRadius: 50 }}
+            style={{ borderTopRightRadius: '3.125rem' }}
           ></div>
           <Image
             src={AboutUsImage}
             alt="About Us"
             className="relative w-full z-10 bg-white"
             style={{
-              borderTopRightRadius: 50,
+              borderTopRightRadius: '3.125rem',
             }}
           />
         </div>
