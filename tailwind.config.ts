@@ -23,6 +23,7 @@ export default {
         montserrat: ['var(--font-montserrat)'],
         roboto: ['var(--font-roboto)'],
         ovo: ['var(--font-ovo)'],
+        poppins: ['var(--font-poppins)'],
         'copperplate-gothic-bold': ['var(--font-copperplate-gothic-bold)'],
         'copperplate-gothic-light': ['var(--font-copperplate-gothic-light)'],
       },

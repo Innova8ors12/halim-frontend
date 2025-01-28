@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Montserrat, Ovo, Roboto } from 'next/font/google';
+import { Montserrat, Ovo, Poppins, Roboto } from 'next/font/google';
 import localFont from 'next/font/local';
 import Providers from '@/providers';
 
@@ -23,6 +23,13 @@ const roboto = Roboto({
 
 const ovo = Ovo({
   variable: '--font-ovo',
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '400',
+});
+
+const poppins = Poppins({
+  variable: '--font-poppins',
   subsets: ['latin'],
   display: 'swap',
   weight: '400',
@@ -54,7 +61,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.variable} ${roboto.variable} ${ovo.variable} ${copperPlateGothicBold.variable} ${copperPlateGothicLight.variable} antialiased`}
+        className={`${montserrat.variable} ${roboto.variable} ${ovo.variable} ${poppins.variable} ${copperPlateGothicBold.variable} ${copperPlateGothicLight.variable} antialiased`}
       >
         <Providers>
           <Header />
