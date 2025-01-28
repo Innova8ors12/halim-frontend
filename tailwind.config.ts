@@ -43,6 +43,7 @@ export default {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
+        vl: '3.125rem',
       },
     },
   },
