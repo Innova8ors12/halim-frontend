@@ -2,7 +2,6 @@ import { FC } from 'react';
 import Image from 'next/image';
 import { ChevronRightIcon } from 'lucide-react';
 import AboutUsImage from '@/../public/assets/images/about-us.png';
-import { FancyHeading } from '../FancyHeading/FancyHeading';
 import { SectionHeading } from '../SectionHeading/SectionHeading';
 import { Button } from '../ui/button';
 
