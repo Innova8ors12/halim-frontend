@@ -13,6 +13,7 @@ body {
     --radius: 0.5rem;
     --color-black: #000000; /* Light theme black color */
     --color-white: #ffffff; /* Light theme white color */
+    --color-gray-400: #bdbecc; /* Light theme gray color */
     --color-gray-500: #6e6e6e; /* Light theme gray color */
     --color-blue-400: #ebf5fa; /* Light theme blue color */
     --color-blue-500: #293e6c; /* Light theme blue color */
@@ -30,6 +31,7 @@ body {
     :root {
       --color-black: #000000; /* Dark theme black color */
       --color-white: #ffffff; /* Dark theme white color */
+      --color-gray-400: #bdbecc; /* Dark theme gray color */
       --color-gray-500: #6e6e6e; /* Dark theme gray color */
       --color-blue-400: #ebf5fa; /* Dark theme blue color */
       --color-blue-500: #293e6c; /* Dark theme blue color */
