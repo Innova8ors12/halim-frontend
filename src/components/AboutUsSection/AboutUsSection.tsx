@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { ChevronRightIcon } from 'lucide-react';
 import AboutUsImage from '@/../public/assets/images/about-us.png';
 import { FancyHeading } from '../FancyHeading/FancyHeading';
+import { SectionHeading } from '../SectionHeading/SectionHeading';
 import { Button } from '../ui/button';
 
 export const AboutUsSection: FC = () => {
@@ -10,10 +11,11 @@ export const AboutUsSection: FC = () => {
     <section className="bg-primary-light w-full py-20">
       <div className="container flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="w-full md:w-1/2">
-          <FancyHeading heading="About Us" highlightedSpanProps={{ className: '!bg-white' }} />
-          <h1 className="text-4xl md:text-5xl font-bold text-black max-w-2xl mt-6">
-            About Halim & Company
-          </h1>
+          <SectionHeading
+            heading="About Us"
+            subHeading="About Halim & Company"
+            highlightedSpanProps={{ className: '!bg-white' }}
+          />
           <p className="font-roboto text-gray-500 font-medium mt-6 max-w-md md:max-w-lg leading-5">
             At Halim & Company, we specialize in providing top-tier industrial engineering
             consulting services. With a focus on optimizing operations, increasing efficiency, and
