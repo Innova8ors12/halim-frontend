@@ -35,7 +35,7 @@ export const ProjectsGallerySection = () => {
             </h3>
             <p className="font-poppins text-white mt-4">
               Implemented 5S and lean manufacturing principles for a manufacturing client, resulting
-              in a 20% increase in operational efficiency."
+              in a 20% increase in operational efficiency.
             </p>
             <h4 className="font-bold text-lg text-secondary mt-4">Key Services</h4>
             <ul className="list-disc font-poppins text-white flex flex-col gap-1 list-inside mt-3">
