@@ -4,7 +4,7 @@ import { SectionHeading } from '../SectionHeading/SectionHeading';
 
 export const ProjectsGallerySection = () => {
   return (
-    <section className="w-full bg-[linear-gradient(to_bottom,theme(colors.secondary)_70%,theme(colors.gray-300)_70%)] pt-20 pb-32">
+    <section className="w-full bg-[linear-gradient(to_bottom,theme(colors.secondary)_70%,theme(colors.gray-300)_70%)] pt-20 pb:0 lg:pb-32">
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
         <div className="w-full">
           <SectionHeading
@@ -22,14 +22,14 @@ export const ProjectsGallerySection = () => {
         </p>
       </div>
       <div className="container mt-8">
-        <div className="relative">
+        <div className="lg:relative flex flex-col items-center gap-12">
           <Image
             src={ManufacturingImage}
             alt="Manufacturing"
             className="w-full rounded-bl-lg"
             placeholder="blur"
           />
-          <div className="absolute bg-primary max-w-sm p-8 pl-16 top-20 right-12 rounded-tr-vl">
+          <div className="lg:absolute bg-primary max-w-sm p-8 pl-16 top-20 right-12 rounded-tr-vl">
             <h3 className="font-bold text-3xl text-secondary relative before:content-[''] before:absolute before:w-16 before:h-1 before:bg-secondary before:top-4 before:-left-24">
               Manufacturing Efficiency Improvement
             </h3>
