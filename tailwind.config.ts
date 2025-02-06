@@ -28,6 +28,7 @@ export default {
         'copperplate-gothic-light': ['var(--font-copperplate-gothic-light)'],
       },
       colors: {
+        'gray-300': 'var(--color-gray-300)',
         'gray-400': 'var(--color-gray-400)',
         'gray-500': 'var(--color-gray-500)',
         'blue-400': 'var(--color-blue-400)',
