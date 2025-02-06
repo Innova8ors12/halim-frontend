@@ -7,7 +7,7 @@ import { Button } from '../ui/button';
 
 export const AboutUsSection: FC = () => {
   return (
-    <section className="bg-primary-light w-full py-20">
+    <section className="bg-gray-300 w-full py-20">
       <div className="container flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="w-full md:w-1/2">
           <SectionHeading
