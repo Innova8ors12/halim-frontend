@@ -11,7 +11,7 @@ export default function Home() {
       <IndustriesSection />
       <ServiceCategorySection />
       <ProjectsGallerySection />
-      <AboutUsSection />
+      <AboutUsSection isHomePage />
     </>
   );
 }
