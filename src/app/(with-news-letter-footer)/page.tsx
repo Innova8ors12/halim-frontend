@@ -10,7 +10,7 @@ export default function Home() {
       <HeroSection />
       <IndustriesSection />
       <ServiceCategorySection />
-      <ProjectsGallerySection />
+      <ProjectsGallerySection isHomePage />
       <AboutUsSection isHomePage />
     </>
   );

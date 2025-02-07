@@ -1,10 +1,17 @@
+import { FC } from 'react';
 import Image from 'next/image';
 import ManufacturingImage from '@/../public/assets/images/projects/manufacturing.png';
 import { SectionHeading } from '../SectionHeading/SectionHeading';
 
-export const ProjectsGallerySection = () => {
+interface ProjectsGallerySectionProps {
+  isHomePage?: boolean;
+}
+
+export const ProjectsGallerySection: FC<ProjectsGallerySectionProps> = ({ isHomePage }) => {
   return (
-    <section className="w-full bg-[linear-gradient(to_bottom,theme(colors.secondary)_70%,theme(colors.gray-300)_70%)] pt-20 pb:0 lg:pb-32">
+    <section
+      className={`w-full bg-[linear-gradient(to_bottom,theme(colors.secondary)_70%,theme(${isHomePage ? 'colors.gray-300' : 'colors.white'})_70%)] pt-20 pb:0 ${isHomePage ? 'lg:pb-32' : 'lg:pb-80 xl:pb-60 2xl:pb-40'}`}
+    >
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
         <div className="w-full">
           <SectionHeading
@@ -29,7 +36,9 @@ export const ProjectsGallerySection = () => {
             className="w-full rounded-bl-lg"
             placeholder="blur"
           />
-          <div className="lg:absolute bg-primary max-w-sm p-8 pl-16 top-20 right-12 rounded-tr-vl">
+          <div
+            className={`lg:absolute bg-primary max-w-sm p-8 pl-16 top-20 right-12 rounded-tr-vl ${isHomePage ? 'mb-0' : 'mb-20'}`}
+          >
             <h3 className="font-bold text-3xl text-secondary relative before:content-[''] before:absolute before:w-16 before:h-1 before:bg-secondary before:top-4 before:-left-24">
               Manufacturing Efficiency Improvement
             </h3>
