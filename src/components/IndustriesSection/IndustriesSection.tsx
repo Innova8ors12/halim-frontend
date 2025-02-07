@@ -5,7 +5,7 @@ import { Button } from '../ui/button';
 
 export const IndustriesSection: FC = () => {
   return (
-    <section className="w-full bg-primary-light py-20">
+    <section id="industries" className="w-full bg-primary-light py-20">
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
         <div className="w-full">
           <SectionHeading

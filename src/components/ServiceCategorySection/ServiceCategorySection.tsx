@@ -18,7 +18,7 @@ import { Button } from '../ui/button';
 
 export const ServiceCategorySection = () => {
   return (
-    <section className="w-full white py-20">
+    <section id="services" className="w-full white py-20">
       <div className="container flex flex-col items-center text-center">
         <h1 className={`font-poppins text-gray-500 font-medium`}>
           Service
